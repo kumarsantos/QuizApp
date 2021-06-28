@@ -156,7 +156,7 @@ function submitForm(e) {
   let name = document.forms["welcome_form"]["name"].value;
   ////////////////store player name
   sessionStorage.setItem("name", name);
-  location.href = "quiz.html";
+  location.href = "dist/quiz.html";
 }
 
 function T() {
