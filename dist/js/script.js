@@ -252,7 +252,7 @@ function show(count) {
 
 function EndGame() {
   sessionStorage.clear();
-  location.href = "index.html";
+  location.href = "../index.html";
   return;
 }
 function TryAgain() {
