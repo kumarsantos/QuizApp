@@ -250,14 +250,16 @@ function show(count) {
   toggleActive();
 }
 
-function EndGame() {
+function EndGame(e) {
   sessionStorage.clear();
+  e.preventDefault()
   location.href = "../index.html";
   return;
 }
-function TryAgain() {
+function TryAgain(e) {
   points = 0;
   sessionStorage.setItem("points", points);
+  e.preventDefault()
   location.href = "quiz.html";
   return;
 }
